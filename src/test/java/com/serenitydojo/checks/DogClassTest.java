@@ -34,4 +34,13 @@ public class DogClassTest {
         Assert.assertEquals(fido.getFavoriteToy(), "Bone");
         Assert.assertEquals(fido.getAge(), 5);
     }
+
+    @Test
+    public void testing_a_dog() {
+        Dog fido = new Dog("Fido","Bone", 5);
+        fido.feed();
+
+        Assert.assertEquals(fido.getFeedStatus(), true);
+        Assert.assertEquals(fido.getNoise(), "Woof");
+    }
 }
